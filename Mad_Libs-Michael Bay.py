@@ -17,7 +17,8 @@ noun = ['act', 'nut', 'string', 'harbor', 'coast', 'celery', 'basket', 'action',
         'frogs', 'flight', 'fly', 'key', 'cent', 'drain', 'button']
 shape_name = ['irregular octagon', 'decagon', 'square-based pyramid', 'rhombus', 'hexagonal pyramid', 'cylinder',
               'nonagon', 'ellipsoid', 'octahedron', 'triangular prism', 'tetrahedron', 'dodecahedron',
-              'triangular-based pyramid', 'trapezium', 'kite', 'trapezoid', 'hexahectaenneacontakaiheptagon']
+              'triangular-based pyramid', 'trapezium', 'kite', 'trapezoid', 'hexahectaenneacontakaiheptagon', 
+              'nonanonacontanonactanonaliagon']
 verb = ['extend', 'water', 'bruise', 'place', 'exist', 'shave', 'impress', 'slow', 'intend', 'stitch', 'expand',
         'borrow', 'save', 'smell', 'pretend', 'flap', 'reject', 'ignore', 'start', 'confess', 'obey', 'fail', 'crush',
         'gaze', 'clip', 'fry', 'call', 'carry', 'request', 'type', 'produce', 'trick', 'attract', 'box', 'spell',
