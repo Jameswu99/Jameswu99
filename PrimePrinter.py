@@ -1,10 +1,13 @@
-upper = int(input("Enter upper number: "))
-lower = int(input("Enter lower number: "))
+lower = int(input("Please Enter the Minimum Value: "))
+upper = int(input("Please Enter the Maximum Value: "))
 print("Prime numbers between", lower, "and", upper, "are:")
-for num in range(lower, upper + 1):
-    if num > 1:
-        for i in range(2, num):
-            if (num % i) ==0:
-                break
-        else:
-            print(num)
+
+for Number in range(lower, upper + 1):
+    count = 0
+    for i in range(2, (Number // 2 + 1)):
+        if Number % i == 0:
+            count = count + 1
+            break
+
+    if count == 0 and Number != 1:
+        print("%d" % Number, end='\n')
