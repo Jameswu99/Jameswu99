@@ -53,8 +53,7 @@ words = ['alberta', 'british columbia', 'manitoba', 'new brunswick', 'newfoundla
          'Kohgiluyeh and Boyer-Ahmad', 'Kurdistan', 'Lorestan', 'Markazi', 'Mazandaran', 'Qazvin', 'Qom', 'Semnan',
          'Sistan and Baluchestan', 'Tehran', 'Yazd', 'Zanjan', 'Amazonas', 'Anzoategui', 'Apure', 'Aragua', 'Barinas',
          'Bolivar', 'Carabobo', 'Cojedes', 'Delta Amacuro', 'Falcon', 'Guarico', 'Lara', 'Merida', 'Miranda', 'Monagas',
-         'Nueva Esparta', 'Portuguesa', 'Sucre', 'Tachira', 'Trujillo', 'Vargas', 'Yaracuy', 'Zulia', '', '', '', '',
-         '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+         'Nueva Esparta', 'Portuguesa', 'Sucre', 'Tachira', 'Trujillo', 'Vargas', 'Yaracuy', 'Zulia',
          'taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu']
 while True:
     clue = []
