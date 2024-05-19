@@ -13,6 +13,7 @@ def prime_factoring(n):
 
     return factors
 
-aNumber = (int)(input("Enter a number:"));
 
-print(prime_factoring(aNumber));
+aNumber = int(input("Enter a number:"))
+
+print(prime_factoring(aNumber))

@@ -1,8 +1,9 @@
 import random
+
 attitude = input('Do you want to type yourself or auto type?("y" for "type yourself" and "a" for "auto type"):')
-mans_name = ['Camden Hope Bullock', 'Elliot Lucinda Vargas', 'Jay Ann Daniel', 'Dillon Lee Doyle',
-             'Kenyon Oliver Sharp', 'Kellen Karilyn Velez', 'James', 'Axel Ocean Madden', 'Brady Adele Parsons',
-             'Alfred Cody Griffith', 'Muhammad Cash Richard']
+mans_name = ['Camden', 'Elliot', 'Jay', 'Dillon', 'Kenyon', 'Kellen', 'Axel', 'Brady', 'Alfred', 'Muhammad',
+             'Hope', 'Lucinda', 'Ann', 'Lee', 'Oliver', 'Karilyn', 'Ocean', 'Adele', 'Cody', 'Cash', 'Bullock',
+             'Vargas', 'James', 'Daniel', 'Doyle', 'Sharp', 'Velez', 'Madden', 'Parsons', 'Griffith', 'Richard']
 occupation_name = ['Radiologic Technologist', 'Janitor', 'Physician', 'College Professor', 'Dentist',
                    'Professional athlete', 'Personal Care Aide', 'Recreation & Fitness Worker', 'Desktop publisher',
                    'Truck Driver']
@@ -17,7 +18,7 @@ noun = ['act', 'nut', 'string', 'harbor', 'coast', 'celery', 'basket', 'action',
         'frogs', 'flight', 'fly', 'key', 'cent', 'drain', 'button']
 shape_name = ['irregular octagon', 'decagon', 'square-based pyramid', 'rhombus', 'hexagonal pyramid', 'cylinder',
               'nonagon', 'ellipsoid', 'octahedron', 'triangular prism', 'tetrahedron', 'dodecahedron',
-              'triangular-based pyramid', 'trapezium', 'kite', 'trapezoid', 'hexahectaenneacontakaiheptagon', 
+              'triangular-based pyramid', 'trapezium', 'kite', 'trapezoid', 'hexahectaenneacontakaiheptagon',
               'nonanonacontanonactanonaliagon']
 verb = ['extend', 'water', 'bruise', 'place', 'exist', 'shave', 'impress', 'slow', 'intend', 'stitch', 'expand',
         'borrow', 'save', 'smell', 'pretend', 'flap', 'reject', 'ignore', 'start', 'confess', 'obey', 'fail', 'crush',
@@ -27,8 +28,8 @@ verb = ['extend', 'water', 'bruise', 'place', 'exist', 'shave', 'impress', 'slow
 verbing = ['extracting', 'educating', 'organising', 'liking', 'translating', 'responding', 'facilitating', 'listening',
            'slowing', 'drawing']
 womans_name = ['Charlee Abraham Daugerty', 'Mariyah Dash Stokes', 'Emerson Marcella Ritter', 'Joanna Haiden Bruce',
-               'Litzy Reagan Nash', 'Reese Dustin Holmes',
-               'Madyson Caprice Price', 'Alyvia Louisa Shaw', 'Jamie Gregory Bush', 'Adalynn Sean Kidd']
+               'Litzy Reagan Nash', 'Reese Dustin Holmes', 'Madyson Caprice Price', 'Alyvia Louisa Shaw',
+               'Jamie Gregory Bush', 'Adalynn Sean Kidd']
 body_parts = ['nose', 'nostril', 'eyebrow', 'buttocks', 'calf', 'mouth', 'thumb', 'chin', 'toe', 'waist']
 restaurant_names = ['Gourmand Pubhouse', 'Little Stallion Tavern', 'Rare Blossom Place', 'Blue Anchor Cucina',
                     'Artisan Honeybee Roadhouse', 'Rosy Clover Bar and Grille', 'Singing Tiger Eats',
@@ -96,7 +97,7 @@ while True:
         noun10 = input("Choose a noun: ")
         verb5 = input("Choose a verb: ")
     print("------------------------------------------")
-    print(man_name, "is a normal", occupation, ".")
+    print(man_name, "is a normal", occupation + ".")
     print("Then one day, a", noun1, "explodes, causing a", noun2, "to blow up, and a nearby", noun3,
           "erupts into a",
           shape, "of flames.")
@@ -112,10 +113,10 @@ while True:
           verb4 + ", which shoots a fireball straight into the heart of", noun8, "and destroys the bad guy leader.")
     print("Everything is", adjective1, "and the two decide that such a", adjective2,
           "ordeal has caused them to fall in", emotion, "with each other.")
-    print("They decide to celebrate by", ving, "on the", noun9 + "and they even managed to use a", noun10,
+    print("They decide to celebrate by", ving, "on the", noun9 + " and they even managed to use a", noun10,
           "from the beginning of the movie, to", verb5, "the whole story together.")
     print("------------------------------------------")
     attitude2 = input('Do you want to do it again(y for yes and n for no):')
-    if attitude2 == 'n':
+    if attitude2.lower() == 'n':
         print('Thank you for using the mad libs generator.')
         break

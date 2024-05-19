@@ -1,6 +1,7 @@
 lower = int(input("Please Enter the Minimum Value: "))
 upper = int(input("Please Enter the Maximum Value: "))
 print("Prime numbers between", lower, "and", upper, "are:")
+lists = []
 
 for Number in range(lower, upper + 1):
     count = 0
@@ -11,3 +12,5 @@ for Number in range(lower, upper + 1):
 
     if count == 0 and Number != 1:
         print("%d" % Number, end='\n')
+        lists.append(Number)
+print(lists)

@@ -1,5 +1,14 @@
 import random
-words = ['alberta', 'britishcolumbia', 'manitoba', 'newbrunswick', 'newfoundlandandlabrdor', 'northwestterritories', 'novascotia', 'nunavut', 'ontario', 'princeedwardisland', 'quebec', 'saskatchewan', 'yukon', 'rhodeisland', 'delaware', 'connecticut', 'hawaii', 'newjersey', 'massachusetts', 'newhampshire', 'vermont', 'maryland', 'westvirginia', 'southcarolina', 'maine', 'virginia', 'kentucky', 'ohio', 'tennessee', 'louisiana', 'pennsylvania', 'mississippi', 'newyork', 'northcarolina', 'albama', 'arkansas', 'florida', 'wisconsin', 'illinois', 'iowa', 'michigan', 'georgia', 'washington', 'oklahoma', 'missouri', 'northdakota', 'southdakota', 'nebraska', 'minnesota', 'kansas', 'utah', 'idaho', 'oregon', 'wyoming', 'colorado', 'nevada', 'arizona', 'newmexico', 'montana', 'california', 'texas', 'alaska', 'taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu']
+
+words = ['alberta', 'britishcolumbia', 'manitoba', 'newbrunswick', 'newfoundlandandlabrdor', 'northwestterritories',
+         'novascotia', 'nunavut', 'ontario', 'princeedwardisland', 'quebec', 'saskatchewan', 'yukon', 'rhodeisland',
+         'delaware', 'connecticut', 'hawaii', 'newjersey', 'massachusetts', 'newhampshire', 'vermont', 'maryland',
+         'westvirginia', 'southcarolina', 'maine', 'virginia', 'kentucky', 'ohio', 'tennessee', 'louisiana',
+         'pennsylvania', 'mississippi', 'newyork', 'northcarolina', 'albama', 'arkansas', 'florida', 'wisconsin',
+         'illinois', 'iowa', 'michigan', 'georgia', 'washington', 'oklahoma', 'missouri', 'northdakota', 'southdakota',
+         'nebraska', 'minnesota', 'kansas', 'utah', 'idaho', 'oregon', 'wyoming', 'colorado', 'nevada', 'arizona',
+         'newmexico', 'montana', 'california', 'texas', 'alaska',
+         'taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu']
 secret_word = random.choice(words)
 clue = []
 index = 0
@@ -9,6 +18,8 @@ while index < len(secret_word):
 heart_symbol = u'\u2764'
 guessed_word_correctly = False
 unknown_letters = len(secret_word)
+
+
 def update_clue(guessed_letter, secret_word, clue, unknown_letters):
     index = 0
     while index < len(secret_word):
@@ -17,6 +28,8 @@ def update_clue(guessed_letter, secret_word, clue, unknown_letters):
             unknown_letters -= 1
         index += 1
     return unknown_letters
+
+
 difficulty = input('選擇難度: (按 1, 2, 3 或 4):\n 1 寶寶模式\n 2 簡單模式\n 3 普通模式\n 4 困難模式\n')
 difficulty = int(difficulty)
 if difficulty == 1:
@@ -27,7 +40,9 @@ elif difficulty == 3:
     lives = 9
 else:
     lives = 6
-print('規則: \n 1.本遊戲是用英文輸入法玩的，用中文輸入法的話程式是不會理你的。\n 2.在這個遊戲裡你要猜出謎底是甚麼\n 3.請用快樂的心情玩\n                                                       吳焌脩上')
+print(
+    '規則: \n 1.本遊戲是用英文輸入法玩的，用中文輸入法的話程式是不會理你的。\n 2.在這個遊戲裡你要猜出謎底是甚麼\n 3.請用快樂的心情玩\n                                       '
+    '                吳焌脩上')
 while lives > 0:
     print(clue)
     print('剩下的性命: ' + heart_symbol * lives)
